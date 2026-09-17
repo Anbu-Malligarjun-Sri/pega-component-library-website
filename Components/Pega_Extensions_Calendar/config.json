@@ -1,0 +1,122 @@
+{
+    "name": "Pega_Extensions_Calendar",
+    "label": "Calendar",
+    "description": "Calendar",
+    "organization": "Pega",
+    "version": "5.0.4",
+    "library": "Extensions",
+    "allowedApplications": [],
+    "componentKey": "Pega_Extensions_Calendar",
+    "type": "Widget",
+    "subtype": [
+        "PAGE",
+        "CASE"
+    ],
+    "properties": [
+        {
+            "name": "heading",
+            "label": "Heading",
+            "format": "TEXT"
+        },
+        {
+            "name": "dataPage",
+            "label": "Data Page name",
+            "format": "TEXT"
+        },
+        {
+            "name": "createClassname",
+            "label": "Create case className",
+            "format": "TEXT"
+        },
+        {
+            "label": "Date Fields Configuration",
+            "format": "GROUP",
+            "properties": [
+                {
+                    "name": "dateProperty",
+                    "label": "Date Property",
+                    "format": "TEXT"
+                },
+                {
+                    "name": "startTimeProperty",
+                    "label": "Start time property",
+                    "format": "TEXT"
+                },
+                {
+                    "name": "endTimeProperty",
+                    "label": "End time property",
+                    "format": "TEXT"
+                }
+            ]
+        },
+        {
+            "name": "defaultViewMode",
+            "label": "Default view",
+            "format": "SELECT",
+            "defaultValue": "Monthly",
+            "source": [
+                {
+                    "key": "Daily",
+                    "value": "Daily"
+                },
+                {
+                    "key": "Weekly",
+                    "value": "Weekly"
+                },
+                {
+                    "key": "Monthly",
+                    "value": "Monthly"
+                }
+            ]
+        },
+        {
+            "name": "nowIndicator",
+            "label": "Show current day",
+            "format": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "name": "weekendIndicator",
+            "label": "Show week-ends",
+            "format": "BOOLEAN",
+            "defaultValue": true
+        },
+        {
+            "name": "slotMinTime",
+            "label": "Day starts at",
+            "format": "TEXT",
+            "defaultValue": "07:00:00"
+        },
+        {
+            "name": "slotMaxTime",
+            "label": "Day ends at",
+            "format": "TEXT",
+            "defaultValue": "19:00:00"
+        },
+        {
+            "format": "LABEL",
+            "label": "About",
+            "name": "PegaAboutLabel",
+            "variant": "h3"
+        },
+        {
+            "format": "LABEL",
+            "label": "Pega_Extensions 5.0.4, Thu Sep 17 2026, 26.1.1-105720",
+            "name": "PegaAboutData",
+            "variant": "primary"
+        }
+    ],
+    "defaultConfig": {
+        "heading": "Calendar",
+        "dataPage": "",
+        "defaultViewMode": "Monthly",
+        "dateProperty": "SessionDate",
+        "startTimeProperty": "StartTime",
+        "endTimeProperty": "EndTime",
+        "slotMinTime": "07:00:00",
+        "slotMaxTime": "19:00:00"
+    },
+    "buildDate": "2026-09-17T17:05:17.134Z",
+    "infinityVersion": "26.1.1-105720",
+    "packageCosmosVersion": "9.23.4"
+}
