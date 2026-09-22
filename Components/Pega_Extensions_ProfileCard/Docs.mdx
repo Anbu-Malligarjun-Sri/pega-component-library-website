@@ -15,9 +15,10 @@ Configure **Image property** with the name of a property on the current case or 
 
 1. A direct `https://` or `data:image/...` value is rendered immediately.
 2. A Pega image or asset key is resolved with the platform asset loader.
-3. If no usable image is available, the card displays initials derived from **Name**.
+3. If no image property value exists, the latest matching case attachment is loaded using **Image attachment category** and optional **Image attachment filename**.
+4. If no usable image is available, the card displays initials derived from **Name**.
 
-For uploaded images, store the uploaded image value in the configured property and provide that property name as **Image property**. The exact value shape depends on how the upload component stores the image; URL, data URI, and Pega asset-key values are supported by this widget.
+Pega attachment fields are not scalar case properties, so they do not appear in the normal property picker. For uploaded case attachments, leave **Image property** empty, set **Image attachment category** to the attachment category (normally `Image`), and optionally set the exact filename. The widget reads the case attachment list and downloads the latest matching image through Pega's attachment API.
 
 ## Configuration
 

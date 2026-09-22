@@ -16,32 +16,50 @@
         {
             "name": "name",
             "label": "Name",
-            "format": "TEXT",
-            "defaultValue": "Javi A. Torres"
+            "format": "PROPERTY",
+            "defaultValue": "@P .CustomerName"
         },
         {
             "name": "title",
             "label": "Title",
-            "format": "TEXT",
-            "defaultValue": "Software Engineer"
+            "format": "PROPERTY",
+            "defaultValue": "@P .CustomerType"
         },
         {
             "name": "handle",
             "label": "Handle",
-            "format": "TEXT",
-            "defaultValue": "javicodes"
+            "format": "PROPERTY",
+            "defaultValue": "@P .CustomerID"
         },
         {
             "name": "status",
             "label": "Status",
-            "format": "TEXT",
-            "defaultValue": "Online"
+            "format": "PROPERTY",
+            "defaultValue": "@P .CaseStatus"
         },
         {
             "name": "imageProperty",
             "label": "Image property",
+            "format": "PROPERTY",
+            "defaultValue": "@P .ProfileImage"
+        },
+        {
+            "name": "imageAttachmentProperty",
+            "label": "Attachment property",
+            "format": "PROPERTY",
+            "defaultValue": "@P .ProfileAttachment"
+        },
+        {
+            "name": "imageAttachmentCategory",
+            "label": "Image attachment category",
             "format": "TEXT",
-            "defaultValue": "ProfileImage"
+            "defaultValue": "Image"
+        },
+        {
+            "name": "imageAttachmentName",
+            "label": "Image attachment filename",
+            "format": "TEXT",
+            "defaultValue": ""
         },
         {
             "name": "showUserInfo",
@@ -74,7 +92,7 @@
         },
         {
             "format": "LABEL",
-            "label": "Pega_Extensions 5.0.4, Thu Sep 17 2026, 26.1.1-105720",
+            "label": "Pega_Extensions 5.0.4, Tue Sep 22 2026, 26.1.1-105720",
             "name": "PegaAboutData",
             "variant": "primary"
         }
@@ -85,10 +103,11 @@
         "handle": "javicodes",
         "status": "Online",
         "imageProperty": "ProfileImage",
+        "imageAttachmentProperty": "ProfileAttachment",
         "showUserInfo": true,
         "enableTilt": true
     },
-    "buildDate": "2026-09-17T17:05:25.900Z",
+    "buildDate": "2026-09-22T07:13:31.696Z",
     "infinityVersion": "26.1.1-105720",
     "packageCosmosVersion": "9.23.4"
 }

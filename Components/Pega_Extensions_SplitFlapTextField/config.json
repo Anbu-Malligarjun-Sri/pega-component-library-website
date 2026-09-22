@@ -1,27 +1,31 @@
 {
-    "name": "Pega_Extensions_SplitFlapText",
-    "label": "Split Flap Text",
-    "description": "Displays animated text using split-flap style character tiles.",
+    "name": "Pega_Extensions_SplitFlapTextField",
+    "label": "Split Flap Text Field",
+    "description": "A text field with an animated split-flap preview.",
     "organization": "Pega",
     "version": "5.0.4",
     "library": "Extensions",
     "allowedApplications": [],
-    "componentKey": "Pega_Extensions_SplitFlapText",
-    "type": "Widget",
-    "subtype": [
-        "PAGE",
-        "CASE"
-    ],
+    "componentKey": "Pega_Extensions_SplitFlapTextField",
+    "type": "Field",
+    "subtype": "Text",
     "properties": [
         {
-            "name": "text",
-            "label": "Initial text",
+            "name": "label",
+            "label": "Label",
             "format": "TEXT",
-            "defaultValue": "LAUNCH READY"
+            "required": true,
+            "defaultValue": "Display text"
+        },
+        {
+            "name": "placeholder",
+            "label": "Placeholder",
+            "format": "TEXT",
+            "defaultValue": "Enter text"
         },
         {
             "name": "fontSize",
-            "label": "Font size",
+            "label": "Preview font size",
             "format": "NUMBER",
             "defaultValue": 52
         },
@@ -50,9 +54,29 @@
             "defaultValue": 8
         },
         {
+            "name": "helperText",
+            "label": "Helper text",
+            "format": "TEXT"
+        },
+        {
+            "name": "readOnly",
+            "label": "Read only",
+            "format": "READONLY"
+        },
+        {
             "label": "Conditions",
             "format": "GROUP",
             "properties": [
+                {
+                    "name": "required",
+                    "label": "Required",
+                    "format": "REQUIRED"
+                },
+                {
+                    "name": "disabled",
+                    "label": "Disabled",
+                    "format": "DISABLED"
+                },
                 {
                     "name": "visibility",
                     "label": "Visibility",
@@ -73,8 +97,16 @@
             "variant": "primary"
         }
     ],
-    "defaultConfig": {},
-    "buildDate": "2026-09-22T07:13:32.674Z",
+    "defaultConfig": {
+        "label": "Display text",
+        "placeholder": "Enter text",
+        "fontSize": 52,
+        "tileColor": "#111827",
+        "textColor": "#f8fafc",
+        "gap": 6,
+        "tileRadius": 8
+    },
+    "buildDate": "2026-09-22T07:13:32.888Z",
     "infinityVersion": "26.1.1-105720",
     "packageCosmosVersion": "9.23.4"
 }

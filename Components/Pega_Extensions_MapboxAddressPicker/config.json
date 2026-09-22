@@ -1,0 +1,129 @@
+{
+    "name": "Pega_Extensions_MapboxAddressPicker",
+    "label": "Mapbox address picker",
+    "description": "Searches, locates, and reverse-geocodes addresses into mapped case properties.",
+    "organization": "Pega",
+    "version": "5.0.4",
+    "library": "Extensions",
+    "allowedApplications": [],
+    "componentKey": "Pega_Extensions_MapboxAddressPicker",
+    "type": "Widget",
+    "subtype": [
+        "PAGE",
+        "CASE"
+    ],
+    "properties": [
+        {
+            "name": "heading",
+            "label": "Heading",
+            "format": "TEXT",
+            "defaultValue": "Choose an address"
+        },
+        {
+            "name": "mapboxToken",
+            "label": "Mapbox public token",
+            "format": "TEXT",
+            "required": true
+        },
+        {
+            "name": "addressLine1Property",
+            "label": "Address line 1 property",
+            "format": "PROPERTY"
+        },
+        {
+            "name": "cityProperty",
+            "label": "City property",
+            "format": "PROPERTY"
+        },
+        {
+            "name": "stateProperty",
+            "label": "State property",
+            "format": "PROPERTY"
+        },
+        {
+            "name": "countryProperty",
+            "label": "Country property",
+            "format": "PROPERTY"
+        },
+        {
+            "name": "postalCodeProperty",
+            "label": "Postal code property",
+            "format": "PROPERTY"
+        },
+        {
+            "name": "latitudeProperty",
+            "label": "Latitude property",
+            "format": "PROPERTY"
+        },
+        {
+            "name": "longitudeProperty",
+            "label": "Longitude property",
+            "format": "PROPERTY"
+        },
+        {
+            "name": "initialLatitude",
+            "label": "Initial latitude",
+            "format": "TEXT",
+            "defaultValue": "17.6868"
+        },
+        {
+            "name": "initialLongitude",
+            "label": "Initial longitude",
+            "format": "TEXT",
+            "defaultValue": "83.2185"
+        },
+        {
+            "name": "zoom",
+            "label": "Initial zoom",
+            "format": "TEXT",
+            "defaultValue": "12"
+        },
+        {
+            "name": "height",
+            "label": "Map height",
+            "format": "TEXT",
+            "defaultValue": "24rem"
+        },
+        {
+            "name": "disabled",
+            "label": "Disable picker",
+            "format": "BOOLEAN",
+            "defaultValue": false
+        },
+        {
+            "label": "Conditions",
+            "format": "GROUP",
+            "properties": [
+                {
+                    "name": "visibility",
+                    "label": "Visibility",
+                    "format": "VISIBILITY"
+                }
+            ]
+        },
+        {
+            "format": "LABEL",
+            "label": "About",
+            "name": "PegaAboutLabel",
+            "variant": "h3"
+        },
+        {
+            "format": "LABEL",
+            "label": "Pega_Extensions 5.0.4, Tue Sep 22 2026, 26.1.1-105720",
+            "name": "PegaAboutData",
+            "variant": "primary"
+        }
+    ],
+    "defaultConfig": {
+        "heading": "Choose an address",
+        "mapboxToken": "",
+        "initialLatitude": "17.6868",
+        "initialLongitude": "83.2185",
+        "zoom": "12",
+        "height": "24rem",
+        "disabled": false
+    },
+    "buildDate": "2026-09-22T07:13:30.477Z",
+    "infinityVersion": "26.1.1-105720",
+    "packageCosmosVersion": "9.23.4"
+}

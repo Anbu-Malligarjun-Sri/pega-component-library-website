@@ -1,0 +1,85 @@
+{
+    "name": "Pega_Extensions_MapboxAddressField",
+    "label": "Mapbox address field",
+    "description": "A searchable address field with Mapbox geocoding and current-location support.",
+    "organization": "Pega",
+    "version": "5.0.4",
+    "library": "Extensions",
+    "allowedApplications": [],
+    "componentKey": "Pega_Extensions_MapboxAddressField",
+    "type": "Field",
+    "subtype": "Text",
+    "properties": [
+        {
+            "name": "label",
+            "label": "Label",
+            "format": "TEXT",
+            "required": true,
+            "defaultValue": "Address"
+        },
+        {
+            "name": "mapboxToken",
+            "label": "Mapbox public token",
+            "format": "TEXT",
+            "required": true
+        },
+        {
+            "name": "placeholder",
+            "label": "Placeholder",
+            "format": "TEXT",
+            "defaultValue": "Search for an address"
+        },
+        {
+            "name": "helperText",
+            "label": "Helper text",
+            "format": "TEXT"
+        },
+        {
+            "name": "readOnly",
+            "label": "Read only",
+            "format": "READONLY"
+        },
+        {
+            "label": "Conditions",
+            "format": "GROUP",
+            "properties": [
+                {
+                    "name": "required",
+                    "label": "Required",
+                    "format": "REQUIRED"
+                },
+                {
+                    "name": "disabled",
+                    "label": "Disabled",
+                    "format": "DISABLED"
+                },
+                {
+                    "name": "visibility",
+                    "label": "Visibility",
+                    "format": "VISIBILITY"
+                }
+            ]
+        },
+        {
+            "format": "LABEL",
+            "label": "About",
+            "name": "PegaAboutLabel",
+            "variant": "h3"
+        },
+        {
+            "format": "LABEL",
+            "label": "Pega_Extensions 5.0.4, Tue Sep 22 2026, 26.1.1-105720",
+            "name": "PegaAboutData",
+            "variant": "primary"
+        }
+    ],
+    "defaultConfig": {
+        "label": "Address",
+        "mapboxToken": "",
+        "placeholder": "Search for an address",
+        "helperText": ""
+    },
+    "buildDate": "2026-09-22T07:13:30.380Z",
+    "infinityVersion": "26.1.1-105720",
+    "packageCosmosVersion": "9.23.4"
+}

@@ -1,0 +1,23 @@
+import { Meta, Primary, Controls } from '@storybook/addon-docs/blocks';
+import * as DemoStories from './demo.stories';
+
+<Meta of={DemoStories} />
+
+# Mapbox Address Picker
+
+The Mapbox Address Picker helps users search for an address or use their current browser location. It reverse-geocodes the selected coordinates and updates mapped Pega properties for address line 1, city, state, country, postal code, latitude, and longitude.
+
+Configure a restricted public Mapbox `pk...` token in the widget. Do not use a secret `sk...` token in browser code or commit tokens to the repository.
+
+For local Storybook development, set `MAPBOX_PUBLIC_TOKEN` in an ignored `.env.local` file before starting Storybook:
+
+```text
+MAPBOX_PUBLIC_TOKEN=pk.your-restricted-public-token
+```
+
+For a Pega deployment, enter the token in the widget's **Mapbox public token** property. The default is intentionally empty.
+
+The browser asks for location permission only after the user selects **Use current location**. Users can also search for an address or drag the map pin; all three paths update the configured Pega properties.
+
+<Primary />
+<Controls />
